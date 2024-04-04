@@ -1,5 +1,6 @@
 const checkPrimeNumber = num => {
     let result = true
+    if(num < 2) result = false
     if(num > 3) {
         for(let i = 2; i <= Math.sqrt(num); i++) {
             if (num % i === 0) {
